@@ -319,3 +319,19 @@ html.lenis,html.lenis body{height:auto}
 .skip{position:absolute;left:-999px;top:8px;background:var(--terra);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
 .skip:focus{left:8px}
 @media(max-width:700px){.page-hero{padding-top:120px}.cover{aspect-ratio:4/3}.pd-nav{grid-template-columns:1fr}.pn.right{text-align:left}#hero{height:360vh}#visualize{height:300vh}.step{left:6vw;right:6vw}.vignette{background:linear-gradient(0deg,rgba(22,19,15,.92) 0%,rgba(22,19,15,.55) 60%,rgba(22,19,15,.2))}}
+
+.logo{display:inline-flex;align-items:center;gap:10px}
+.logo img{width:40px;height:auto;display:block}
+@media(max-width:700px){.logo img{width:34px}}
+
+.hero-pvc{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center;color:var(--paper);font-size:.95rem}
+.hero-pvc b{font-family:var(--f-serif);font-weight:500;font-size:1.1rem}
+.hero-pvc .btn{padding:10px 18px}
+#hero .lb{z-index:90}
+@media(max-width:700px){
+  #pv .pvb{top:auto;bottom:28px;transform:none;width:50px;height:50px}
+  #pv .pvb.l{left:calc(50% - 64px)}#pv .pvb.r{right:calc(50% - 64px)}
+  #pv .pvc{margin-bottom:104px;text-align:center}
+  .pvimg,.pvimg img{max-width:96vw}
+}
+#hero .lb{background:rgba(10,8,6,.97)}

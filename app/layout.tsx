@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
+    url: '/',
     locale: 'en_US',
     alternateLocale: ['bn_BD'],
     siteName: 'Prokolpo',
@@ -49,7 +50,7 @@ const business = {
   alternateName: ['Prokolpo Designs', 'প্রকল্প', 'Prokolpo-প্রকল্প'],
   description: site.description,
   url: site.url,
-  logo: `${site.url}/icon.svg`,
+  logo: { '@type': 'ImageObject', url: `${site.url}/logo.png`, width: 311, height: 301 },
   image: `${site.url}/projects/japandi-0.jpg`,
   telephone: site.phone,
   email: site.email,

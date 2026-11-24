@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -27,7 +28,7 @@ export default function Nav() {
   return (
     <>
       <nav id="nav" className={solid || open ? 'solid' : ''} aria-label="Main">
-        <Link href="/" className="logo" aria-label="Prokolpo home">Prokolpo<b>.</b></Link>
+        <Link href="/" className="logo" aria-label="Prokolpo home"><Image src="/logo-mark.png" alt="" width={40} height={32} priority /><span>Prokolpo<b>.</b></span></Link>
         <ul>{links.map((l) => <li key={l.href}><Link href={l.href}>{l.label}</Link></li>)}</ul>
         <Link href="/#contact" className="btn navcta">Free consultation</Link>
         <button className={`burger ${open ? 'open' : ''}`} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}><span /></button>

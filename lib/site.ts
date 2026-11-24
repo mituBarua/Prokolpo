@@ -1,7 +1,7 @@
 // Central business info — used by pages, metadata and structured data.
 // Set NEXT_PUBLIC_SITE_URL in Vercel once you have a domain (e.g. https://prokolpo.com.bd).
 export const site = {
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://prokolpo.vercel.app').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://prokolpo-designs.vercel.app').replace(/\/$/, ''),
   name: 'Prokolpo',
   legalName: 'Prokolpo Designs',
   nameBn: 'প্রকল্প',
